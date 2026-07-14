@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources/Filter.feature",
+		features = "src/test/resources/feature/Filter.feature",
 		glue = {"stepDefinitions"},
 		tags = "@FilterFeature"
 		)
