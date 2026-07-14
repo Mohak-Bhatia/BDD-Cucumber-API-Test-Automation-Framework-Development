@@ -3,8 +3,8 @@ Feature: Filter Functionality APIs
 
   @FilterBySearch
   Scenario Outline: Filter by Product Name
-    Given I click on search bar with <productName>
-    Then I Validate the <ResponseCode> and <ResponseMessage>
+    Given I click on search bar with "<productName>"
+    Then I Validate the <ResponseCode> and "<ResponseMessage>"
 
     Examples:
       | productName | ResponseCode | ResponseMessage                   |
@@ -14,7 +14,7 @@ Feature: Filter Functionality APIs
   @FilterByPriceRange
   Scenario Outline: Filter by Price Range
     Given I enter the price range with <minPrice> and <maxPrice>
-    Then I Validate the <ResponseCode> and <ResponseMessage>
+    Then I Validate the <ResponseCode> and "<ResponseMessage>"
 
     Examples:
       | minPrice | maxPrice | ResponseCode | ResponseMessage                   |
@@ -24,7 +24,7 @@ Feature: Filter Functionality APIs
   @FilterByCategory
   Scenario Outline: Filter by Categories
     Given I choose "<Category>" of my choice
-    Then I Validate the <ResponseCode> and <ResponseMessage>
+    Then I Validate the <ResponseCode> and "<ResponseMessage>"
 
     Examples:
       | Category          | ResponseCode | ResponseMessage                   |
@@ -37,7 +37,7 @@ Feature: Filter Functionality APIs
   @FilterBySubCategory
   Scenario Outline: Filter by Subcategories
     Given I choose a particular "<Subcategory>"
-    Then I Validate the <ResponseCode> and <ResponseMessage>
+    Then I Validate the <ResponseCode> and "<ResponseMessage>"
 
     Examples:
       | Subcategory       | ResponseCode | ResponseMessage                   |
@@ -49,7 +49,7 @@ Feature: Filter Functionality APIs
   @FilterByGender
   Scenario Outline: Filter by Gender
     Given I choose "<Gender>"
-    Then I Validate the <ResponseCode> and <ResponseMessage>
+    Then I Validate the <ResponseCode> and "<ResponseMessage>"
 
     Examples:
       | Gender    | ResponseCode | ResponseMessage                   |
