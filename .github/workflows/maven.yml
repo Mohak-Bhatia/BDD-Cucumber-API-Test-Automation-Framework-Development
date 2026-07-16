@@ -1,0 +1,31 @@
+name: Daily API BDD TESTS
+
+on:
+  schedule:
+    # Runs at 3:30 AM UTC, which is 9:00 AM IST
+    # Monday to Friday
+    - cron: '30 3 * * 1-5'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      
+      - name: Run Cucumber Filter Feature Tests
+        run: mvn test -DCucumber.tags="@FilterFeature"
+      
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-results
+          path: target/cucumber-reports/
