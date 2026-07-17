@@ -29,7 +29,7 @@ public class Hooks {
     @BeforeAll
     public static void beforeAll() {
         Response response = given()
-            .header("Content-Type","application/json").body(UserLoginCredentials.LogInCredentials())
+            .header("Content-Type","application/json").body(UserLoginCredentials.LoginCredentials())
         .when()
             .post(FetchResources.getBaseUri().concat(FetchResources.getLoginResource()))
         .then()

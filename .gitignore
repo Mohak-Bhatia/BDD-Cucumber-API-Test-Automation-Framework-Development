@@ -1,0 +1,33 @@
+# File: .gitignore
+
+# ========== Environment & Configuration ==========
+.env
+.env.local
+.env.*.local
+*.properties.local
+config.local.properties
+
+# ========== Credentials ==========
+credentials.json
+secrets.json
+*.key
+*.pem
+
+# ========== Build & Output ==========
+target/
+test-output/
+TestReports/
+reports/
+*.class
+*.jar
+
+# ========== IDE ==========
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+
+# ========== OS ==========
+.DS_Store
+Thumbs.db
