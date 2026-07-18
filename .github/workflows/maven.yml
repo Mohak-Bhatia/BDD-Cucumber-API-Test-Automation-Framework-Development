@@ -27,6 +27,11 @@ jobs:
       
       - name: Build with Maven (Download Dependencies)
         run: mvn clean install -DskipTests
+
+      - name: Create Maven settings security file
+        run: |
+          mkdir -p ~/.m2
+          echo '<settingsSecurity><master>ignored</master></settingsSecurity>' > ~/.m2/settings-security.xml
       
       - name: Run Cucumber Filter Feature Tests
         # Pass environment variables from GitHub Secrets
