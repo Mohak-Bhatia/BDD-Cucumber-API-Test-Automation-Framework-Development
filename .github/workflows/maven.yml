@@ -38,6 +38,7 @@ jobs:
         env:
           BASE_URI: ${{ secrets.BASE_URI }}
           LOGIN_ENDPOINT: ${{ secrets.LOGIN_ENDPOINT }}
+          FILTER_ENDPOINT: ${{ secrets.FILTER_ENDPOINT }}
           USER_EMAIL: ${{ secrets.USER_EMAIL }}
           USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
           REPORT_PATH: ${{ secrets.REPORT_PATH }}
