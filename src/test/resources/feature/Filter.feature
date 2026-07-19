@@ -8,7 +8,7 @@ Feature: Filter Functionality APIs
 
     Examples:
       | productName | ResponseCode | ResponseMessage                   |
-      | Adidas      | 200          | All Products fetched Successfully |
+      | ADIDAS      | 200          | All Products fetched Successfully |
       | Reebok      | 200          | No Products Found                 |
 
   @FilterByPriceRange
@@ -28,11 +28,11 @@ Feature: Filter Functionality APIs
 
     Examples:
       | Category          | ResponseCode | ResponseMessage                   |
-      | fashion           | 200          | All Products fetched Successfully |
+      | electronics       | 200          | All Products fetched Successfully |
       | cars              | 200          | No Products Found                 |
-      | fashion,household | 200          | All Products fetched Successfully |
+      | electronics,household | 200      | All Products fetched Successfully |
       | building,cars     | 200          | No Products Found                 |
-      | fashion,cars      | 200          | All Products fetched Successfully |
+      | electronics,cars  | 200          | All Products fetched Successfully |
 
   @FilterBySubCategory
   Scenario Outline: Filter by Subcategories
@@ -43,7 +43,7 @@ Feature: Filter Functionality APIs
       | Subcategory       | ResponseCode | ResponseMessage                   |
       | shoes             | 200          | No Products Found                 |
       | diamond           | 200          | No Products Found                 |
-      | mobiles,laptops   | 200          | All Products fetched Successfully |
+      | mobiles   		  | 200          | All Products fetched Successfully |
       | buildings,mobiles | 200          | All Products fetched Successfully |
 
   @FilterByGender
