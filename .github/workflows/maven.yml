@@ -41,9 +41,11 @@ jobs:
           USER_EMAIL: ${{ secrets.USER_EMAIL }}
           USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
           REPORT_PATH: ${{ secrets.REPORT_PATH }}
+          REPORT_TITLE: ${{ secrets.REPORT_TITLE }}
+          REPORT_AUTHOR: ${{ secrets.REPORT_AUTHOR }}
         run: |
           echo "🚀 Starting API BDD Tests with environment variables..."
-          mvn test -DCucumber.tags="@FilterFeature" -X
+          mvn clean test
       
       - name: Upload test results (Always)
         if: always()
