@@ -10,9 +10,10 @@ import static io.restassured.RestAssured.*;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.testng.Assert;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+
+import static org.junit.Assert.*;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -38,7 +39,8 @@ public class Hooks {
 
         String body = response.asString();
         JsonPath jp = new JsonPath(body);
-        Assert.assertEquals(jp.getString("message"), "Login Successfully");
+        assertEquals(jp.getString("message"), "Login Successfully"); 
+
         accessToken = jp.getString("token");
     }
 

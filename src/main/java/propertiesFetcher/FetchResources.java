@@ -3,15 +3,15 @@ package propertiesFetcher;
 public class FetchResources {
     
     public static String getBaseUri() {
-        return ConfigReader.getProperty("base");
+        return System.getenv("BASE_URI");
     }
     
     public static String getLoginResource() {
-    	return ConfigReader.getProperty("login");
+    	return System.getenv("LOGIN_ENDPOINT");
     }
     
     public static String getFilterResource() {
-    	return ConfigReader.getProperty("filter");
+    	return System.getenv("FILTER_ENDPOINT");
     }
 
 }

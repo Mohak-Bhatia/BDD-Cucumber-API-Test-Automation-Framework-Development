@@ -1,4 +1,5 @@
 propertiesFetcher\ConfigReader.class
 TestData\FilterFunctionalityData.class
+TestData\LoginData.class
 propertiesFetcher\FetchResources.class
 utils\Report.class

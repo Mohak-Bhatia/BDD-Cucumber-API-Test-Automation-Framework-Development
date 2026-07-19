@@ -1,4 +1,132 @@
 -------------------------------------------------------------------------------
 Test set: runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.590 s -- in runner.TestRunner
+Tests run: 15, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 8.391 s <<< FAILURE! -- in runner.TestRunner
+Filter Functionality APIs.Filter by Product Name #1 -- Time elapsed: 0.438 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: All Products fetched Successfully
+  Actual: No Products Found
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at service.ResponseValidationService.ValidateResponse(ResponseValidationService.java:15)
+	at stepDefinitions.FilterStepDefinitions.i_validate_the_response_code_and_response_message(FilterStepDefinitions.java:22)
+	at ✽.I Validate the 200 and "All Products fetched Successfully"(file:///C:/Users/hp/eclipse-workspace/APIFrameworkDevelopment/src/test/resources/feature/Filter.feature:7)
+
+Filter Functionality APIs.Filter by Categories #1 -- Time elapsed: 0.206 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: All Products fetched Successfully
+  Actual: No Products Found
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at service.ResponseValidationService.ValidateResponse(ResponseValidationService.java:15)
+	at stepDefinitions.FilterStepDefinitions.i_validate_the_response_code_and_response_message(FilterStepDefinitions.java:22)
+	at ✽.I Validate the 200 and "All Products fetched Successfully"(file:///C:/Users/hp/eclipse-workspace/APIFrameworkDevelopment/src/test/resources/feature/Filter.feature:27)
+
+Filter Functionality APIs.Filter by Categories #3 -- Time elapsed: 0.199 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: All Products fetched Successfully
+  Actual: No Products Found
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at service.ResponseValidationService.ValidateResponse(ResponseValidationService.java:15)
+	at stepDefinitions.FilterStepDefinitions.i_validate_the_response_code_and_response_message(FilterStepDefinitions.java:22)
+	at ✽.I Validate the 200 and "All Products fetched Successfully"(file:///C:/Users/hp/eclipse-workspace/APIFrameworkDevelopment/src/test/resources/feature/Filter.feature:27)
+
+Filter Functionality APIs.Filter by Categories #5 -- Time elapsed: 0.173 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: All Products fetched Successfully
+  Actual: No Products Found
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at service.ResponseValidationService.ValidateResponse(ResponseValidationService.java:15)
+	at stepDefinitions.FilterStepDefinitions.i_validate_the_response_code_and_response_message(FilterStepDefinitions.java:22)
+	at ✽.I Validate the 200 and "All Products fetched Successfully"(file:///C:/Users/hp/eclipse-workspace/APIFrameworkDevelopment/src/test/resources/feature/Filter.feature:27)
+
+Filter Functionality APIs.Filter by Subcategories #3 -- Time elapsed: 0.156 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: All Products fetched Successfully
+  Actual: No Products Found
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at service.ResponseValidationService.ValidateResponse(ResponseValidationService.java:15)
+	at stepDefinitions.FilterStepDefinitions.i_validate_the_response_code_and_response_message(FilterStepDefinitions.java:22)
+	at ✽.I Validate the 200 and "All Products fetched Successfully"(file:///C:/Users/hp/eclipse-workspace/APIFrameworkDevelopment/src/test/resources/feature/Filter.feature:40)
+
+Filter Functionality APIs.Filter by Subcategories #4 -- Time elapsed: 0.153 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: All Products fetched Successfully
+  Actual: No Products Found
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at service.ResponseValidationService.ValidateResponse(ResponseValidationService.java:15)
+	at stepDefinitions.FilterStepDefinitions.i_validate_the_response_code_and_response_message(FilterStepDefinitions.java:22)
+	at ✽.I Validate the 200 and "All Products fetched Successfully"(file:///C:/Users/hp/eclipse-workspace/APIFrameworkDevelopment/src/test/resources/feature/Filter.feature:40)
+
+Filter Functionality APIs.Filter by Gender #1 -- Time elapsed: 0.167 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: All Products fetched Successfully
+  Actual: No Products Found
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at service.ResponseValidationService.ValidateResponse(ResponseValidationService.java:15)
+	at stepDefinitions.FilterStepDefinitions.i_validate_the_response_code_and_response_message(FilterStepDefinitions.java:22)
+	at ✽.I Validate the 200 and "All Products fetched Successfully"(file:///C:/Users/hp/eclipse-workspace/APIFrameworkDevelopment/src/test/resources/feature/Filter.feature:52)
+
+Filter Functionality APIs.Filter by Gender #2 -- Time elapsed: 0.145 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: All Products fetched Successfully
+  Actual: No Products Found
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at service.ResponseValidationService.ValidateResponse(ResponseValidationService.java:15)
+	at stepDefinitions.FilterStepDefinitions.i_validate_the_response_code_and_response_message(FilterStepDefinitions.java:22)
+	at ✽.I Validate the 200 and "All Products fetched Successfully"(file:///C:/Users/hp/eclipse-workspace/APIFrameworkDevelopment/src/test/resources/feature/Filter.feature:52)
+
